@@ -1,0 +1,35 @@
+{
+  "name": "node-people-everywhere",
+  "version": "1.0.0",
+  "description": "A directory of companies and developers working with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "concurrently \"npm run client\" \"npm run server\" ",
+    "client": "cd ../client && npm start",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoZoracKy/npe.git"
+  },
+  "keywords": [
+    "node.js",
+    "directory"
+  ],
+  "author": "Tamal Anwar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DiegoZoracKy/npe/issues"
+  },
+  "homepage": "https://github.com/DiegoZoracKy/npe#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
